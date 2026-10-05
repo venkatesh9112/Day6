@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS objects</title>
+</head>
+<body>
+    <h1>JS Objects Demo</h1>
+    <h2>Student details</h2>
+    <script>
+        //creating multiple objects using list
+        const persons=[
+            {
+                name:"venkatesh",
+                age:20,
+                id:"k9"
+            },
+            {
+                name:"mayur",
+                age:20,
+                id:"j4"
+            },
+            {
+                name:"Abdul",
+                age:20,
+                id:"L0"
+            }
+        ]
+        console.log(persons);
+
+        //print in html page
+        document.write("<br>name: "+persons[0].name);
+        document.write("<br>age: "+persons[0].age);
+
+        //using for loop to print all objects
+        for(let i=0;i<persons.length;i++){
+            document.write("<br><br>name: "+persons[i].name);
+            document.write("<br>age: "+persons[i].age);
+            document.write("<br>id: "+persons[i].id);
+            
+        }
+
+        //advanced for loop
+        for(let person of persons){
+            document.write("<br><br>name: "+person.name);
+            document.write("<br>age: "+person.age);
+            document.write("<br>id: "+person.id);
+        }
+    </script>
+</body>
+</html>
